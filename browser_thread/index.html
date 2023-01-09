@@ -39,8 +39,21 @@
     <iframe src="./iframe.html"></iframe>
     <br />
     <h1>crossorigin</h1>
-    <iframe src="//stimulating-business.surge.sh/"></iframe>
+    
+    <script>
+    main();
 
+      async function(){
+              let fr = await fetch('./iframe.html')
+      let frt=await fr.text();
+      let sr='data:text/plain;charset=utf-8,'+frt;
+     var crf = document.createElement('iframe');
+      
+      crf.src = sr;
+        document.body.appendChild(crf);
+      }
+    </script>
+    
     <script src="./index.js"></script>
   </body>
 </html>
