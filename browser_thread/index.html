@@ -46,7 +46,7 @@
       async function main(){
               let fr = await fetch('./iframe.html');
       let frt=await fr.text();
-      let sr='data:text/plain;charset=utf-8,'+frt;
+      let sr='data:text/html;charset=utf-8,'+frt;
      var crf = document.createElement('iframe');
       
       crf.src = sr;
