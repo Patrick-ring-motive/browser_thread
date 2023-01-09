@@ -48,8 +48,9 @@
       let frt=await fr.text();
                    let frj = await fetch('./iframe.js');
       let frtj=await frj.text();
-        
-        let sr='data:text/html;charset=utf-8,base64'+btoa(frt.split('</body>')[0]+`<script>`+frtj+`</script></body>`);
+        let btf=frt.split('</body>')[0] + '<script>' +frtj+decodeURIComponent('%3C%2Fscript%3E%3C%2Fbody%3E');
+        let bt = btoa( btf );
+        let sr='data:text/html;charset=utf-8,base64' + 
      var crf = document.createElement('iframe');
       
       crf.src = sr;
