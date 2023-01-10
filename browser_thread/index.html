@@ -50,7 +50,7 @@
       let frtj=await frj.text();
         let btf=frt.split('</body>')[0] + '<script>' +frtj+decodeURIComponent('%3C%2Fscript%3E%3C%2Fbody%3E');
         let bt = btoa( encodeURIComponenet(btf) );
-        let sr='data:text/html;charset=utf-8,base64' + 
+        let sr='data:text/html;charset=utf-8,base64' + bt;
      var crf = document.createElement('iframe');
       
       crf.src = sr;
