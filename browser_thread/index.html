@@ -46,9 +46,9 @@
       async function main(){
       let fr = await fetch('./iframe.html');
       let frt=await fr.text();
-      let frj = await fetch('./iframe.js');
-      let frtj=await frj.text();
-      let btf=frt.split('</body>')[0] + '<script>' +frtj+decodeURI('%3C%2Fscript%3E%3C%2Fbody%3E');
+     // let frj = await fetch('./iframe.js');
+     // let frtj=await frj.text();
+      let btf=frt;//.split('</body>')[0] + '<script>' +frtj+decodeURI('%3C%2Fscript%3E%3C%2Fbody%3E');
       let bt = btoa( btf );
       let sr='data:text/html;charset=utf-8;base64,' + bt;
       var crf = document.createElement('iframe');
