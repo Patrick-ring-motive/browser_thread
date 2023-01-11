@@ -44,7 +44,7 @@
     main();
 
       async function main(){
-      let fr = await fetch('./iframe.html');
+      let fr = await fetch('./data_iframe.html');
       let frt=await fr.text();
      // let frj = await fetch('./iframe.js');
      // let frtj=await frj.text();
@@ -54,7 +54,7 @@
       var crf = document.createElement('iframe');
         crf.sandbox='allow-scripts';
         crf.setAttribute('sandbox','allow-scripts');
-      crf.src = 'https://oddjobhat.github.io/browser_thread/cross_iframe.html';//sr;
+      crf.src = sr;//'https://oddjobhat.github.io/browser_thread/cross_iframe.html';
       document.body.appendChild(crf);
       }
     </script>
