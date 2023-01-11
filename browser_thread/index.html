@@ -52,8 +52,9 @@
       let bt = btoa( btf );
       let sr='data:text/html;charset=utf-8;base64,' + bt;
       var crf = document.createElement('iframe');
+        crf.sandbox='allow-scripts';
         crf.setAttribute('sandbox','allow-scripts');
-      crf.src = 'https://patrick-ring-motive.github.io/browser_thread/browser_thread/data_iframe.html';//sr;
+      crf.src = 'https://oddjobhat.github.io/browser_thread/cross_iframe.html';//sr;
       document.body.appendChild(crf);
       }
     </script>
